@@ -1,0 +1,22 @@
+{
+  "name": "studentchoice.com",
+  "version": "1.0.0",
+  "description": "student choose teacher by their choice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinhaji2000/studentChoice.com.git"
+  },
+  "author": "Mukesh Sinha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinhaji2000/studentChoice.com/issues"
+  },
+  "homepage": "https://github.com/sinhaji2000/studentChoice.com#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}
