@@ -1,0 +1,166 @@
+<%- include('../include/head.ejs') %>
+    <title>
+        <%=pageTitle%>
+    </title>
+    <link rel="stylesheet" href="css/student/teacherCard.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">Shishya</div>
+            <div class="profile-container">
+                <img src="student-photo.jpg" alt="Student Photo" class="profile-photo" id="profile-photo">
+                <div class="profile-menu" id="profile-menu">
+                    <ul>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#settings">Settings</a></li>
+                        <li><a href="#notifications">Notifications</a></li>
+                        <li><a href="#logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="card-container">
+            <div class="card" onclick="showPopup('teacher1')">
+                <img src="https://via.placeholder.com/300x200?text=Teacher+1" alt="Teacher 1">
+                <h2>Teacher 1</h2>
+                <p>Subject: Mathematics</p>
+                <p>Year of Ex.: 4years</p>
+                <p>Expertise : Research</p>
+            </div>
+            <div class="card" onclick="showPopup('teacher2')">
+                <img src="https://via.placeholder.com/300x200?text=Teacher+2" alt="Teacher 2">
+                <h2>Teacher 2</h2>
+                <p>Subject: Physics</p>
+                <p>Year of Ex.: 4years</p>
+                <p>Expertise : Research</p>
+            </div>
+            <div class="card" onclick="showPopup('teacher3')">
+                <img src="https://via.placeholder.com/300x200?text=Teacher+3" alt="Teacher 3">
+                <h2>Teacher 3</h2>
+                <p>Subject: Chemistry</p>
+                <p>Year of Ex.: 4years</p>
+                <p>Expertise : Research</p>
+            </div>
+            <div class="card" onclick="showPopup('teacher4')">
+                <img src="https://via.placeholder.com/300x200?text=Teacher+4" alt="Teacher 4">
+                <h2>Teacher 4</h2>
+                <p>Subject: Biology</p>
+                <p>Year of Ex.: 4years</p>
+                <p>Expertise : Research</p>
+            </div>
+            <div class="card" onclick="showPopup('teacher5')">
+                <img src="https://via.placeholder.com/300x200?text=Teacher+5" alt="Teacher 5">
+                <h2>Teacher 5</h2>
+                <p>Subject: English</p>
+                <p>Year of Ex.: 4years</p>
+                <p>Expertise : Research</p>
+            </div>
+            <div class="card" onclick="showPopup('teacher6')">
+                <img src="https://via.placeholder.com/300x200?text=Teacher+6" alt="Teacher 6">
+                <h2>Teacher 6</h2>
+                <p>Subject: History</p>
+                <p>Year of Ex.: 4years</p>
+                <p>Expertise : Research</p>
+            </div>
+            <div class="card" onclick="showPopup('teacher6')">
+                <img src="https://via.placeholder.com/300x200?text=Teacher+6" alt="Teacher 6">
+                <h2>Teacher 6</h2>
+                <p>Subject: History</p>
+                <p>Year of Ex.: 4years</p>
+                <p>Expertise : Research</p>
+            </div>
+            <div class="card" onclick="showPopup('teacher6')">
+                <img src="https://via.placeholder.com/300x200?text=Teacher+6" alt="Teacher 6">
+                <h2>Teacher 6</h2>
+                <p>Subject: History</p>
+                <p>Year of Ex.: 4years</p>
+                <p>Expertise : Research</p>
+            </div>
+        </div>
+
+        <!-- Popups for each teacher -->
+        <div id="popup-teacher1" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('teacher1')">&times;</span>
+                <img src="https://via.placeholder.com/150?text=Teacher+1" alt="Teacher 1">
+                <h2>Teacher 1</h2>
+                <p>Subject: Mathematics</p>
+                <p>Email:
+                    <span id="email-teacher1" onclick="copyToClipboard('teacher1')">teacher1@example.com</span>
+                </p>
+
+                <p>Contact: +123456789</p>
+                <p>Years of Expertise: 15 years</p>
+                <p>Years of Experience: 20 years</p>
+            </div>
+        </div>
+
+        <div id="popup-teacher2" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('teacher2')">&times;</span>
+                <img src="https://via.placeholder.com/150?text=Teacher+2" alt="Teacher 2">
+                <h2>Teacher 2</h2>
+                <p>Subject: Physics</p>
+                <p>Email: teacher2@example.com</p>
+                <p>Contact: +123456789</p>
+                <p>Years of Expertise: 10 years</p>
+                <p>Years of Experience: 12 years</p>
+            </div>
+        </div>
+
+        <div id="popup-teacher3" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('teacher3')">&times;</span>
+                <img src="https://via.placeholder.com/150?text=Teacher+3" alt="Teacher 3">
+                <h2>Teacher 3</h2>
+                <p>Subject: Chemistry</p>
+                <p>Email: teacher3@example.com</p>
+                <p>Contact: +123456789</p>
+                <p>Years of Expertise: 8 years</p>
+                <p>Years of Experience: 10 years</p>
+            </div>
+        </div>
+
+        <div id="popup-teacher4" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('teacher4')">&times;</span>
+                <img src="https://via.placeholder.com/150?text=Teacher+4" alt="Teacher 4">
+                <h2>Teacher 4</h2>
+                <p>Subject: Biology</p>
+                <p>Email: teacher4@example.com</p>
+                <p>Contact: +123456789</p>
+                <p>Years of Expertise: 12 years</p>
+                <p>Years of Experience: 15 years</p>
+            </div>
+        </div>
+
+        <div id="popup-teacher5" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('teacher5')">&times;</span>
+                <img src="https://via.placeholder.com/150?text=Teacher+5" alt="Teacher 5">
+                <h2>Teacher 5</h2>
+                <p>Subject: English</p>
+                <p>Email: teacher5@example.com</p>
+                <p>Contact: +123456789</p>
+                <p>Years of Expertise: 9 years</p>
+                <p>Years of Experience: 11 years</p>
+            </div>
+        </div>
+
+        <div id="popup-teacher6" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('teacher6')">&times;</span>
+                <img src="https://via.placeholder.com/150?text=Teacher+6" alt="Teacher 6">
+                <h2>Teacher 6</h2>
+                <p>Subject: History</p>
+                <p>Email: teacher6@example.com</p>
+                <p>Contact: +123456789</p>
+                <p>Years of Expertise: 14 years</p>
+                <p>Years of Experience: 18 years</p>
+            </div>
+        </div>
+
+        <script src="js/student/teacherCard.js"></script>
+        <%- include('../include/end.ejs') %>

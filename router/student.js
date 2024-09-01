@@ -1,10 +1,9 @@
-// const express = require("express");
-// const Router = express.Router();
-// const getStudent = require("../controller/studentController");
+const express = require("express");
+const Router = express.Router();
+const student = require("../controller/studentController");
 
-// Router.get("/", (req, res, next) => {
-//   res.send(getStudent);
-//   next();
-// });
+Router.get("/", student.teacherCard);
+Router.get("/signup", student.getSignUp);
+Router.post("/signup", student.postSignup);
 
-// module.exports = Router;
+module.exports = Router;
