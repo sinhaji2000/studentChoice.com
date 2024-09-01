@@ -1,0 +1,44 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.home-page {
+    display: flex;
+    flex-direction: row;
+    /* Stack the cards vertically */
+    align-items: center;
+    /* Center the cards horizontally */
+}
+
+.card {
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    /* Add some space between the cards */
+    text-align: center;
+    /* Center the text inside the cards */
+    border: 1px solid #ccc;
+    /* Optional: Add a border to the cards */
+    padding: 20px;
+    /* Optional: Add some padding inside the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow to the cards */
+}
+
+.card img {
+    max-width: 100%;
+    /* Ensure the image does not exceed the card's width */
+    height: 500px;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Remove any extra space below the image */
+    margin: 0 auto;
+    /* Center the image horizontally */
+}

@@ -1,14 +1,16 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-console.log(path.join(__dirname, "views"));
+const moongoose = require("moongoose");
 
-// const stuedntRoutes = require("./router/student");
+app.use(express.static(path.join(__dirname, "public")));
 
 app.set("view engine", "ejs");
-
-// Set the directory where your views are located
 app.set("views", "views");
+
+app.get("/", (req, res, next) => {
+  res.render("index");
+});
 
 // app.use(stuedntRoutes);
 
